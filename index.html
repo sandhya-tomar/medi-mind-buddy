@@ -1,26 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>MedMinder AI - Your Smart Health Companion</title>
     <meta name="description" content="MedMinder AI - Smart medication tracking and health management for everyone" />
     <meta name="author" content="MedMinder" />
 
+    <!-- ✅ Favicon (your logo.png placed in /public folder) -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- Social Sharing -->
     <meta property="og:title" content="MedMinder AI - Your Smart Health Companion" />
     <meta property="og:description" content="Smart medication tracking and health management for everyone" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="/logo.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@medminder_ai" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:image" content="/logo.png" />
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!-- App script -->
     <script type="module" src="/src/main.tsx"></script>
-    <script id="omnidimension-web-widget" async src="https://backend.omnidim.io/web_widget.js?secret_key=55731a161808393f7a5704ec948db2d2"></script>
+
+    <!-- Optional: AI Widget (if needed) -->
+    <script
+      id="omnidimension-web-widget"
+      async
+      src="https://backend.omnidim.io/web_widget.js?secret_key=55731a161808393f7a5704ec948db2d2"
+    ></script>
   </body>
 </html>
